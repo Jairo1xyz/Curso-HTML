@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimos avanzando!</title>
+</head>
+<body>
+  <!--Prof. ALvaro Felipe:
+  En las clases siempre lo he hecho con Firefox 
+  porque con chrome solo ves el cambio una vez. 
+  Luego chrome guarda la mejor versión en cache 
+  y nunca más veras un cambio hasta limpiar la 
+  cache. Obviamente para mejorar el rendimiento 
+  y no volver a cargar las imágenes. Pero para 
+  enseñar o hacer experimentos esto confunde 
+  mucho a los desarrolladores. Prueba con 
+  Firefox y seguro te funciona.
+  -->
+  <!--
+  <img src="img/maravilla.jpg" alt="Imagen de la maravilla del mundo Machu Picchu"
+  srcset="img/ninia.jpg 1.5x, img/fuego.jpg 2x">
+  <br>
+  <img src="img/maravilla.jpg" alt="Imagen de la maravilla del mundo Machu Picchu"
+  srcset="img/ninia.jpg 700w, img/fuego.jpg 900w">
+  <br>-->
+  <picture>
+    <source srcset="img/fuego.jpg" 
+    media="(min-width: 900px)">
+    <source srcset="img/ninia.jpg" 
+    media="(min-width: 700px)">
+    <img src="img/maravilla.jpg" alt="Imagen de la maravilla del mundo Machu Picchu">
+  </picture>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semántica y Microdatos</title>
+</head>
+<body>
+  <article>
+    <h2>Zapatilla deportiva</h2>
+    <img src="zapatilla1.jpg" alt="Foto de zapatilla 1">
+    <p>Marca: <span>Nike</span></p>
+    <p>Precio: <span>300</span></p>
+  </article>
+  <!--Visitar schema.org-->
+  <article itemscope itemtype="http://schema.org/Blog">
+    <h2>Curso de HTML 5.2 en UNMSM</h2>
+    <p>Este viernes y sábado</p>
+    <footer>
+      <p itemprop="author">Adrian Padilla</p>
+    </footer>
+  </article>
+  <!--Para probar que el código está bien estructurado
+      visitar la Herramienta de prueba de datos estructurados
+      de Google en:
+      https://search.google.com/structured-data/testing-tool/u/0/?hl=es
+    -->
+  <!--Para Open Graph de Facebook visitar el sharing debugger
+      https://developers.facebook.com/tools/debug/
+    -->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>multimedia</title>
+</head>
+<body>
+  <!--<video src="media/apple.mp4" controls poster="media/apple.jpg"></video>-->
+  <video src="media/apple.mp4" id="video" poster="media/apple.jpg"></video>
+  <button id="play">Play</button>
+  <button id="pause">Pause</button><br>
+  <audio src="media/Dutty love.mp3" controls></audio>
+  <script>
+    const video =document.getElementById('video'),
+    play =document.getElementById('play'),
+    pause =document.getElementById('pause')
+
+    play.addEventListener('click', ()=>{
+      video.play()
+    })
+
+    pause.addEventListener('click', ()=>{
+      video.pause()
+    })
+  </script>
+</body>
+</html>
